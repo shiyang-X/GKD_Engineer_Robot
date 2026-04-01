@@ -1,0 +1,176 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ÂµVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sy x, swu, LIC=TIVNB-28Y2L-LQP0Q-NXFQ4-UVXYI-RS151
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  D:\keil5_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\xsy_project\RM\2026_gc\312gc_remote\gc_remote_2026\gc_remote_2026\G431_FreeRTOS\MDK-ARM\G431_FreeRTOS.uvprojx
+Project File Date:  03/22/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\keil5_v5\ARM\ARMCC\Bin'
+Rebuild target 'G431_FreeRTOS'
+compiling stm32g4xx_ll_adc.c...
+assembling startup_stm32g431xx.s...
+compiling fdcan.c...
+compiling stm32g4xx_hal_adc.c...
+compiling gpio.c...
+compiling stm32g4xx_hal_msp.c...
+compiling dma.c...
+compiling app_freertos.c...
+../BSP/adc_user.h(9): warning:  #1295-D: Deprecated declaration adc1_user_init - give arg types
+  void adc1_user_init();
+../BSP/adc_user.h(10): warning:  #1295-D: Deprecated declaration adc2_user_init - give arg types
+  void adc2_user_init();
+../BSP/uart_user.h(28): warning:  #1295-D: Deprecated declaration uart_transmit_arm_data - give arg types
+  void uart_transmit_arm_data();
+../Applications/arm_ctrl.h(15): warning:  #1295-D: Deprecated declaration put_first_kuang_test2 - give arg types
+  uint8_t put_first_kuang_test2();
+../Applications/arm_ctrl.h(16): warning:  #1295-D: Deprecated declaration enable_state_test - give arg types
+  uint8_t enable_state_test();
+../Applications/arm_ctrl.h(17): warning:  #1295-D: Deprecated declaration hold_state_test - give arg types
+  uint8_t hold_state_test();
+../Applications/arm_ctrl.h(18): warning:  #1295-D: Deprecated declaration get_first_test - give arg types
+  uint8_t get_first_test();
+../Applications/arm_ctrl.h(19): warning:  #1295-D: Deprecated declaration get_second_test - give arg types
+  uint8_t get_second_test();
+../Applications/arm_ctrl.h(20): warning:  #1295-D: Deprecated declaration put_first_kuang_test - give arg types
+  uint8_t put_first_kuang_test();
+../Applications/arm_ctrl.h(21): warning:  #1295-D: Deprecated declaration catch_out_test - give arg types
+  uint8_t catch_out_test();
+../Core/Src/app_freertos.c(188): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		angle_j1 = ADC_To_Angle(ADC1_GetFiltered(0),360) + 7.428572;
+../Core/Src/app_freertos.c(189): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		angle_j2 = ADC_To_Angle(ADC1_GetFiltered(1),360) + 30.417583;
+../Core/Src/app_freertos.c(190): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		angle_j3 = ADC_To_Angle(ADC1_GetFiltered(2),360) - 0.842491;
+../Core/Src/app_freertos.c(193): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		angle_j4 = ADC_To_Angle(ADC2_GetFiltered(0),360) + 4.000000;
+../Core/Src/app_freertos.c(194): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		angle_j5 = ADC_To_Angle(ADC2_GetFiltered(1),360) + 4.80000;
+../Core/Src/app_freertos.c(195): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		angle_j6 = ADC_To_Angle(ADC2_GetFiltered(2),360) + 2.769231;
+../Core/Src/app_freertos.c: 16 warnings, 0 errors
+compiling adc.c...
+compiling usart.c...
+compiling stm32g4xx_hal_rcc.c...
+compiling stm32g4xx_hal_flash.c...
+compiling stm32g4xx_it.c...
+compiling stm32g4xx_hal.c...
+compiling stm32g4xx_hal_adc_ex.c...
+compiling main.c...
+compiling croutine.c...
+compiling event_groups.c...
+compiling list.c...
+compiling stm32g4xx_hal_rcc_ex.c...
+compiling stream_buffer.c...
+compiling queue.c...
+compiling timers.c...
+compiling tasks.c...
+compiling heap_4.c...
+compiling port.c...
+compiling stm32g4xx_hal_dma_ex.c...
+compiling stm32g4xx_hal_gpio.c...
+compiling stm32g4xx_hal_flash_ex.c...
+compiling stm32g4xx_hal_dma.c...
+compiling adc_filter.c...
+../BSP/adc_user.h(9): warning:  #1295-D: Deprecated declaration adc1_user_init - give arg types
+  void adc1_user_init();
+../BSP/adc_user.h(10): warning:  #1295-D: Deprecated declaration adc2_user_init - give arg types
+  void adc2_user_init();
+..\Applications\adc_filter.c: 2 warnings, 0 errors
+compiling stm32g4xx_hal_pwr.c...
+compiling stm32g4xx_hal_flash_ramfunc.c...
+compiling stm32g4xx_hal_exti.c...
+compiling stm32g4xx_hal_fdcan.c...
+compiling stm32g4xx_hal_cortex.c...
+compiling stm32g4xx_hal_pwr_ex.c...
+compiling system_stm32g4xx.c...
+compiling adc_user.c...
+..\BSP\adc_user.h(9): warning:  #1295-D: Deprecated declaration adc1_user_init - give arg types
+  void adc1_user_init();
+..\BSP\adc_user.h(10): warning:  #1295-D: Deprecated declaration adc2_user_init - give arg types
+  void adc2_user_init();
+..\BSP\adc_user.c: 2 warnings, 0 errors
+compiling stm32g4xx_hal_uart_ex.c...
+compiling stm32g4xx_hal_uart.c...
+compiling uart_user.c...
+..\BSP\uart_user.h(28): warning:  #1295-D: Deprecated declaration uart_transmit_arm_data - give arg types
+  void uart_transmit_arm_data();
+..\BSP\uart_user.c(180): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\uart_user.c: 2 warnings, 0 errors
+compiling cmsis_os2.c...
+compiling can_user.c...
+..\BSP\can_user.c(43): warning:  #550-D: variable "feedback"  was set but never used
+          MotorFeedback_t feedback;
+..\BSP\can_user.c: 1 warning, 0 errors
+compiling arm_ctrl.c...
+..\Applications\arm_ctrl.h(15): warning:  #1295-D: Deprecated declaration put_first_kuang_test2 - give arg types
+  uint8_t put_first_kuang_test2();
+..\Applications\arm_ctrl.h(16): warning:  #1295-D: Deprecated declaration enable_state_test - give arg types
+  uint8_t enable_state_test();
+..\Applications\arm_ctrl.h(17): warning:  #1295-D: Deprecated declaration hold_state_test - give arg types
+  uint8_t hold_state_test();
+..\Applications\arm_ctrl.h(18): warning:  #1295-D: Deprecated declaration get_first_test - give arg types
+  uint8_t get_first_test();
+..\Applications\arm_ctrl.h(19): warning:  #1295-D: Deprecated declaration get_second_test - give arg types
+  uint8_t get_second_test();
+..\Applications\arm_ctrl.h(20): warning:  #1295-D: Deprecated declaration put_first_kuang_test - give arg types
+  uint8_t put_first_kuang_test();
+..\Applications\arm_ctrl.h(21): warning:  #1295-D: Deprecated declaration catch_out_test - give arg types
+  uint8_t catch_out_test();
+..\Applications\arm_ctrl.c(42): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				}else if(angle_jx > 135.0)
+..\Applications\arm_ctrl.c(52): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				}else if(angle_jx > 90.0)
+..\Applications\arm_ctrl.c(62): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				}else if(angle_jx > 60.0)
+..\Applications\arm_ctrl.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=22616 RO-data=1552 RW-data=236 ZI-data=9756  
+FromELF: creating hex file...
+"G431_FreeRTOS\G431_FreeRTOS.axf" - 0 Error(s), 33 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32G4xx_DFP.2.1.0.pack
+                Keil::STM32G4xx_DFP@2.1.0
+                STMicroelectronics STM32G4 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_G431_FreeRTOS
+  D:/keil5_v5/ARM/PACK/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:17
+</pre>
+</body>
+</html>
