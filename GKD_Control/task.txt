@@ -1,0 +1,21 @@
+lsusb
+ls /dev
+
+sudo nano /etc/udev/rules.d/99-usb-can.rules
+Bus 003 Device 007: ID 0001:606f Fry's Electronics USB2CAN adapter    0001:606f
+Bus 003 Device 020: ID 0c72:000c PEAK System PCAN-USB
+Bus 003 Device 008: ID aeee:0000 GKD Robotics Lab Rmcontrol-IMU V1.0  aeee:0000
+SUBSYSTEM=="tty",ATTRS{idVendor}=="aeee", ATTRS{idProduct}=="0000",SYMLINK+="IMU_HERO",MODE="0660",GROUP="gkd"
+
+
+lsusb -v -d 1a86:55d3
+REFEREE:5B14064958
+ARM_RX:5B14064981
+ARM_TX: 5B5F002471
+
+Bus 003 Device 002: ID 1a86:8091 QinHeng Electronics USB HUB 是imu与遥控器板子
+
+Bus 003 Device 003: ID 1a86:55d3 QinHeng Electronics USB Single Serial  裁判系统
+
+sudo udevadm control --reload-rules  
+sudo udevadm trigger
